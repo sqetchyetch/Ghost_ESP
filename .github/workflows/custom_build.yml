@@ -148,6 +148,9 @@ jobs:
               "Crowtech_LCD")
                 cp "configs/sdkconfig.crowtech7inch" sdkconfig.defaults
                 ;;
+              "ESP32S3_Touch_LCD_1.69")
+                cp "configs/sdkconfig.esp32s3touch1.69inch" sdkconfig.defaults
+                ;;
             esac
           else
             # Start with base config for the selected board
@@ -233,3 +236,4 @@ jobs:
               echo "No"
             fi
           )" >> $GITHUB_STEP_SUMMARY
+
